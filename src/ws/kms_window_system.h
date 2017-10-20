@@ -66,7 +66,7 @@ public:
     std::vector<uint32_t> physical_device_queue_family_indices(
         vk::PhysicalDevice const& pd) override;
 
-private:
+protected:
     void create_gbm_bos();
     void create_drm_fbs();
     void create_vk_images();
